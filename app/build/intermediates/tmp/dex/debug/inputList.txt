@@ -1,0 +1,5 @@
+/root/AndroidStudioProjects/Egbami/app/build/intermediates/classes/debug
+/root/AndroidStudioProjects/Egbami/app/build/intermediates/pre-dexed/debug/support-annotations-21.0.3-77286b450018c765668e673a0baa91c48ed88e84.jar
+/root/AndroidStudioProjects/Egbami/app/build/intermediates/pre-dexed/debug/internal_impl-21.0.3-0261c5acae310026ea4716fa2ce280c13aa812d4.jar
+/root/AndroidStudioProjects/Egbami/app/build/intermediates/pre-dexed/debug/classes-b9f88f1b8c8f04c64b46a73bc3f26a3bc33ee994.jar
+/root/AndroidStudioProjects/Egbami/app/build/intermediates/pre-dexed/debug/classes-6d4a80ef70550533dc3c3e88fcbaf27e19f5291d.jar

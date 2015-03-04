@@ -1,0 +1,32 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" tools:context=".MainActivity">
+    <item android:id="@+id/emer_cont"
+        android:title="@string/contact"
+        android:orderInCategory="100"
+        android:icon="@android:drawable/radiobutton_on_background"
+        app:showAsAction="never" />
+
+
+    <item android:id="@+id/med_history"
+        android:title="@string/medical"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+
+    <item android:id="@+id/emer_serv"
+        android:title="@string/service"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+
+    <item android:id="@+id/sos"
+        android:title="@string/sos"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+
+    <item android:id="@+id/refresh"
+        android:title="refresh"
+        android:orderInCategory="100"
+        android:icon="@drawable/ic_action_refresh"
+
+        app:showAsAction="always" />
+</menu>
