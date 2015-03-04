@@ -108,29 +108,15 @@ public class medical_hist_tabs  extends ActionBarActivity implements
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
 
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.emer_cont) {
-            return true;
+        switch (id){
+            case R.id.refresh:
+
+                return true;
+
+            default:
+                return super.onOptionsItemSelected(item);
         }
 
-        if (id == R.id.emer_serv) {
-            return true;
-        }
-        if (id == R.id.med_history) {
-            return true;
-        }
-        if (id == R.id.sos) {
-            return true;
-        }
-
-        if (id == R.id.refresh)
-        {
-            updateTask task = new updateTask();
-
-            task.execute();
-        }
-
-        return super.onOptionsItemSelected(item);
     }
     @Override
     public void onTabSelected(android.support.v7.app.ActionBar.Tab tab,
@@ -158,19 +144,19 @@ public class medical_hist_tabs  extends ActionBarActivity implements
 //        Log.d(TAG, String.valueOf(tab.getPosition()));
 
     }
-    public class updateTask extends AsyncTask<Void, Void, Void>
-    {
-
-
-        @Override
-        protected Void doInBackground(Void... params) {
-
-            med_history_frag startView = new med_history_frag();
-
-            startView.view();
-            return null;
-        }
-    }
+//    public class updateTask extends AsyncTask<Void, Void, Void>
+//    {
+//
+//
+//        @Override
+//        protected Void doInBackground(Void... params) {
+//
+//            med_history_frag startView = new med_history_frag();
+//
+//            startView.view();
+//            return null;
+//        }
+//    }
 
 }
 

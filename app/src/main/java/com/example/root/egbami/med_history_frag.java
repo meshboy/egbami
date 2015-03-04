@@ -51,8 +51,20 @@ public class med_history_frag extends Fragment {
         history = new med_hist();
 
         history = repo.getHistoryId();
-        view();
 
+
+        if (history != null)
+        {
+            name.setText(history.med_name);
+            natn.setText(history.med_nationality);
+            allergy.setText(history.med_allergy);
+            bldgrp.setText(history.med_bloodGrp);
+            diabetic.setText(history.med_diabetic);
+            med_cond.setText(history.med_condition);
+            med_ins.setText(history.med_insurance);
+            on_med.setText(history.med_medication);
+
+        }
 
 
         return view;
@@ -77,6 +89,9 @@ public class med_history_frag extends Fragment {
         }
 
     }
+
+
+
 
 
 

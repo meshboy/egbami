@@ -50,13 +50,13 @@ public class list_contact extends ActionBarActivity implements android.view.View
 
         add = (Button) findViewById(R.id.btnAdd);
 
-        fetchAll = (Button) findViewById(R.id.fetchAll);
+//        fetchAll = (Button) findViewById(R.id.fetchAll);
 
         add.setOnClickListener(this);
-        fetchAll.setOnClickListener(this);
+//        fetchAll.setOnClickListener(this);
 
-        AnimationDrawable draw = (AnimationDrawable)fetchAll.getCompoundDrawables()[0];
-        draw.start();
+//        AnimationDrawable draw = (AnimationDrawable)fetchAll.getCompoundDrawables()[0];
+//        draw.start();
 
         view();
     }

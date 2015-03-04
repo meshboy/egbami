@@ -47,6 +47,11 @@
     <eat-comment/>
     <color name="highlighted_text_material_dark">#6680cbc4</color>
     <color name="highlighted_text_material_light">#66009688</color>
+    <!-- From: file:/root/AndroidStudioProjects/Egbami/app/src/main/res/values/color.xml -->
+    <eat-comment/>
+    <color name="hint">#54000000</color>
+    <!-- From: file:/root/AndroidStudioProjects/Egbami/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
+    <eat-comment/>
     <color name="hint_foreground_material_dark">@color/bright_foreground_disabled_material_dark</color>
     <color name="hint_foreground_material_light">@color/bright_foreground_disabled_material_light</color>
     <color name="link_text_material_dark">@color/material_deep_teal_200</color>

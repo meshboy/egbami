@@ -3,26 +3,32 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:layout_width="match_parent"
+    android:background="@color/white"
     android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
     tools:context="com.instinctcoder.sqlitedb.StudentDetail$PlaceholderFragment">
 
     <LinearLayout
+
         android:orientation="horizontal"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/white">
+        android:layout_width="match_parent"
+        android:gravity="center_horizontal"
+        android:background="@drawable/button_shape"
+
+        android:layout_alignParentTop="true"
+        android:layout_height="wrap_content">
 
         <TextView
-            android:layout_width="fill_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textStyle="bold"
-            android:textSize="30dp"
-            android:text="Add Contacts"
-            android:gravity="center"
+            android:text="Contacts"
+            android:textSize="20sp"
             android:textColor="@color/white"
-            android:background="@color/black"
-
-            android:id="@+id/textView10" />
+            android:gravity="center"
+            android:id="@+id/textView12" />
     </LinearLayout>
 
     <LinearLayout
@@ -37,7 +43,7 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:hint="Enter Name:"
-            android:textColorHint="@color/red"
+            android:textColorHint="@color/hint"
             android:id="@+id/edit_name" />
     </LinearLayout>
 
@@ -53,7 +59,7 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:hint="Email Address:"
-            android:textColorHint="@color/red"
+            android:textColorHint="@color/hint"
             android:id="@+id/edit_email" />
     </LinearLayout>
 
@@ -69,7 +75,7 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:hint="Phone Number"
-            android:textColorHint="@color/red"
+            android:textColorHint="@color/hint"
             android:id="@+id/edit_phone" />
     </LinearLayout>
 
@@ -86,20 +92,23 @@
 
         <Button
             android:layout_width="100dp"
-            android:layout_height="wrap_content"
-            android:text="Save"
-            android:textColor="@color/red"
+            android:layout_height="30dp"
+            android:text="save"
+            android:gravity="center_horizontal"
+            android:background="@drawable/button_shape"
+            android:textColor="@color/white"
             android:id="@+id/contact_save" />
 
         <Button
-            style="?android:attr/buttonStyleSmall"
+            android:layout_height="30dp"
             android:layout_width="100dp"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
-            android:layout_height="wrap_content"
-            android:text="Delete"
-            android:textColor="@color/red"
-            android:id="@+id/contact_del" />
+            android:gravity="center_horizontal"
+            android:text="delete"
+            android:background="@drawable/button_shape"
+            android:textColor="@color/white"
+            android:id="@+id/contact_cancel" />
 
 
     </LinearLayout>

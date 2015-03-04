@@ -95,7 +95,7 @@ public class edit_contact extends ActionBarActivity implements View.OnClickListe
 
         }
 
-        else if (v.getId() == (R.id.contact_del))
+        else if (v.getId() == (R.id.contact_cancel))
         {
             dataRepo getContactData = new dataRepo(this);
 

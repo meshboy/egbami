@@ -3,8 +3,8 @@
     <item android:state_pressed="true" >
         <shape android:shape="rectangle"  >
             <corners android:radius="3dip" />
-            <stroke android:width="1dip" android:color="#5e7974" />
-            <gradient android:angle="-90" android:startColor="#345953" android:endColor="#54000000"  />
+            <stroke android:width="1dip" android:color="#54000000" />
+            <gradient android:angle="-90" android:startColor="#54000000" android:endColor="#54000000"  />
         </shape>
 
         <!--#54000000-->
@@ -12,15 +12,15 @@
     <item android:state_focused="true">
         <shape android:shape="rectangle"  >
             <corners android:radius="3dip" />
-            <stroke android:width="1dip" android:color="#5e7974" />
-            <solid android:color="#58857e"/>
+            <stroke android:width="1dip" android:color="#54000000" />
+            <solid android:color="#54000000"/>
         </shape>
     </item>
     <item >
         <shape android:shape="rectangle"  >
             <corners android:radius="3dip" />
-            <stroke android:width="1dip" android:color="#5e7974" />
-            <gradient android:angle="-90" android:startColor="#8dbab3" android:endColor="#58857e" />
+            <stroke android:width="1dip" android:color="#54000000" />
+            <gradient android:angle="-90" android:startColor="#54000000" android:endColor="#54000000" />
         </shape>
     </item>
 </selector><!-- From: file:/root/AndroidStudioProjects/Egbami/app/src/main/res/drawable/button_shape.xml -->
