@@ -61,13 +61,14 @@ public class select_action extends ActionBarActivity implements View.OnClickList
 
     @Override
     public void onBackPressed() {
-        Intent intent = new Intent(Intent.ACTION_MAIN);
-
-        intent.addCategory(Intent.CATEGORY_HOME);
-
-        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-        startActivity(intent);
-        finish();
+        super.onBackPressed();
+//        Intent intent = new Intent(Intent.ACTION_MAIN);
+//
+//        intent.addCategory(Intent.CATEGORY_HOME);
+//
+//        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+//        startActivity(intent);
+//        finish();
     }
 
     @TargetApi(Build.VERSION_CODES.HONEYCOMB)
@@ -118,17 +119,20 @@ public class select_action extends ActionBarActivity implements View.OnClickList
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.emer_cont) {
-            return true;
+             getSupportFragmentManager().beginTransaction()
+                    .replace(R.id.container, new list_contact())
+                    .commit();
         }
 
         if (id == R.id.emer_serv) {
-            return true;
+            Intent intent = new Intent(this, emergency_tabs.class);
+            startActivity(intent);
         }
         if (id == R.id.med_history) {
-            return true;
+            getSupportFragmentManager().beginTransaction().add(R.id.container, new med_history_frag()).commit();
         }
         if (id == R.id.sos) {
-            return true;
+            getSupportFragmentManager().beginTransaction().add(R.id.container, new sos()).commit();
         }
         return super.onOptionsItemSelected(item);
     }

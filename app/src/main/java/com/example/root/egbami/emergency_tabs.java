@@ -101,37 +101,39 @@ public class emergency_tabs  extends ActionBarActivity implements
 
 
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
-        return true;
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.emer_cont) {
-            return true;
-        }
-
-        if (id == R.id.emer_serv) {
-            return true;
-        }
-        if (id == R.id.med_history) {
-            return true;
-        }
-        if (id == R.id.sos) {
-            return true;
-        }
-
-        return super.onOptionsItemSelected(item);
-    }
+//    @Override
+//    public boolean onCreateOptionsMenu(Menu menu) {
+//        // Inflate the menu; this adds items to the action bar if it is present.
+//        getMenuInflater().inflate(R.menu.menu_main, menu);
+//        return true;
+//    }
+//
+//    @Override
+//    public boolean onOptionsItemSelected(MenuItem item) {
+//        // Handle action bar item clicks here. The action bar will
+//        // automatically handle clicks on the Home/Up button, so long
+//        // as you specify a parent activity in AndroidManifest.xml.
+//        int id = item.getItemId();
+//
+//        //noinspection SimplifiableIfStatement
+//        if (id == R.id.emer_cont) {
+//            getSupportFragmentManager().beginTransaction()
+//                    .replace(R.id.container, new list_contact())
+//                    .commit();
+//        }
+//
+//        if (id == R.id.emer_serv) {
+//            return true;
+//        }
+//        if (id == R.id.med_history) {
+//            getSupportFragmentManager().beginTransaction().add(R.id.container, new med_history_frag()).commit();
+//        }
+//        if (id == R.id.sos) {
+//            getSupportFragmentManager().beginTransaction().add(R.id.container, new sos()).commit();
+//        }
+//
+//        return super.onOptionsItemSelected(item);
+//    }
     @Override
     public void onTabSelected(android.support.v7.app.ActionBar.Tab tab,
                               android.support.v4.app.FragmentTransaction fragmentTransaction) {

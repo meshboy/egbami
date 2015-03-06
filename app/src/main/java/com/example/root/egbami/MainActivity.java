@@ -1,6 +1,8 @@
 package com.example.root.egbami;
 
+import android.app.Activity;
 import android.content.Intent;
+import android.os.CountDownTimer;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -11,7 +13,7 @@ import android.widget.ImageButton;
 import android.widget.TextView;
 
 
-public class MainActivity extends ActionBarActivity implements View.OnClickListener {
+public class MainActivity extends Activity implements View.OnClickListener {
     //    private ImageButton start;
     private TextView start;
 
@@ -27,24 +29,14 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
         start.setOnClickListener(this);
 
 
-        try
-        {
 
-        }
-        catch(Exception e)
-        {
-            Log.d("EGAMI", e.getMessage());
-        }
-
+       start();
 
         start = (TextView) findViewById(R.id.start);
         start.setOnClickListener(this);
     }
 
-    @Override
-    public void onBackPressed() {
-        super.finish();
-    }
+
 
     @Override
     public void onClick(View v) {
@@ -53,6 +45,22 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
             Intent intent = new Intent(this, select_action.class);
             startActivity(intent);
         }
+
+    }
+
+    public void start ()
+    {
+        new CountDownTimer(2000, 2000) {
+            public void onTick(long millisUntilFinished) {
+
+            }
+
+            public void onFinish() {
+                // Here do what you like...
+                Intent intent = new Intent(MainActivity.this, select_action.class);
+                startActivity(intent);
+            }
+        }.start();
 
     }
 
