@@ -3,6 +3,7 @@ package com.example.root.egbami;
 import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -21,7 +22,22 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
 
 //        start = (ImageButton) findViewById(R.id.start_button);
 
-//        start.setOnClickListener(MainActivity.this);
+        start = (TextView) findViewById(R.id.start);
+
+        start.setOnClickListener(this);
+
+
+        try
+        {
+            Intent intent = new Intent(MainActivity.this, com.example.root.egbami.select_action.class);
+            startActivity(intent);
+
+            Thread.sleep(3000);
+        }
+        catch(Exception e)
+        {
+            Log.d("EGAMI", e.getMessage());
+        }
 
 
         start = (TextView) findViewById(R.id.start);
@@ -32,7 +48,7 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
     public void onClick(View v) {
         if (v.getId() == R.id.start)
         {
-            Intent intent = new Intent(MainActivity.this, com.example.root.egbami.select_action.class);
+            Intent intent = new Intent(this, select_action.class);
             startActivity(intent);
         }
 

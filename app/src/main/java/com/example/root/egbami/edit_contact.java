@@ -1,55 +1,91 @@
 package com.example.root.egbami;
 
+
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.app.ActionBarActivity;
+import android.support.v4.app.Fragment;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
+import android.widget.TextView;
 import android.widget.Toast;
 
 
-
 /**
- * Created by root on 2/20/15.
+ * A simple {@link Fragment} subclass.
  */
-public class edit_contact extends ActionBarActivity implements View.OnClickListener
-{
+public class edit_contact extends Fragment implements View.OnClickListener{
+
     private EditText name;
     private EditText phone;
     private EditText email;
     private Button save;
     private Button delete;
     private Button exit;
+    private ImageButton back, forward;
 
-    private int contact_id =0;
+    private int contact_id =0 ;
+
+    View view;
+
+    public edit_contact() {
+        // Required empty public constructor
+    }
+
+    public static edit_contact newInstance(Bundle os)
+    {
+        edit_contact fragment = new edit_contact();
+
+        fragment.setArguments(os);
+
+        return fragment;
+    }
 
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.edit_contacts);
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
 
-        name = (EditText) findViewById(R.id.edit_name);
-        phone = (EditText) findViewById(R.id.edit_phone);
-        email = (EditText) findViewById(R.id.edit_email);
+        View view = inflater.inflate(R.layout.edit_contacts, container, false);
 
-        save = (Button) findViewById(R.id.contact_save);
-        delete = (Button) findViewById(R.id.contact_del);
+        name = (EditText) view.findViewById(R.id.edit_name);
+        phone = (EditText) view.findViewById(R.id.edit_phone);
+        email = (EditText) view.findViewById(R.id.edit_email);
 
+        save = (Button) view.findViewById(R.id.contact_save);
+        delete = (Button) view.findViewById(R.id.contact_del);
+
+
+        back = (ImageButton) view.findViewById(R.id.back);
+        forward =(ImageButton) view.findViewById(R.id.forward);
+
+        back.setOnClickListener(this);
 
         save.setOnClickListener(this);
         delete.setOnClickListener(this);
 
 
+//        contact_id =0;
 
-        contact_id =0;
+//        Intent intent = getIntent();
+//
+//        contact_id = intent.getIntExtra("contact", 0);
 
-        Intent intent = getIntent();
+       try{
+           Bundle re = getArguments();
+           contact_id = re.getInt("contact", 0);
+       }
+       catch (Exception e)
+       {
+//           Toast.makeText(getActivity(), e.getMessage(), Toast.LENGTH_SHORT).show();
+       }
 
-        contact_id = intent.getIntExtra("contact", 0);
-
-        dataRepo getContactData = new dataRepo(this);
+        dataRepo getContactData = new dataRepo(getActivity());
 
         contactProfile contact = new contactProfile();
 
@@ -63,14 +99,13 @@ public class edit_contact extends ActionBarActivity implements View.OnClickListe
 
 
 
+        return view;
     }
 
     @Override
-    public void onClick(View v)
-    {
-        if (v.getId() == (R.id.contact_save))
-        {
-            dataRepo getContactData = new dataRepo(this);
+    public void onClick(View v) {
+        if (v.getId() == (R.id.contact_save)) {
+            dataRepo getContactData = new dataRepo(getActivity());
 
             contactProfile contact = new contactProfile();
 
@@ -80,39 +115,36 @@ public class edit_contact extends ActionBarActivity implements View.OnClickListe
 
             contact.contatcId = contact_id;
 
-            if (contact_id == 0)
-            {
+            if (contact_id == 0) {
                 contact_id = getContactData.insertContact(contact);
-                Toast.makeText(this, "New Contact has been added", Toast.LENGTH_SHORT).show();
-            }
-
-            else {
+                Toast.makeText(getActivity(), "New Contact has been added", Toast.LENGTH_SHORT).show();
+            } else {
                 getContactData.updateContact(contact);
-                Toast.makeText(this, "Contact has been updated", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getActivity(), "Contact has been updated", Toast.LENGTH_SHORT).show();
 
             }
-
-
         }
-
-        else if (v.getId() == (R.id.contact_cancel))
+        if (v.getId() == (R.id.contact_del))
         {
-            dataRepo getContactData = new dataRepo(this);
+            dataRepo getContactData = new dataRepo(getActivity());
 
             contactProfile contact = new contactProfile();
 
             getContactData.deleteContact(contact_id);
-            Toast.makeText(this, "Contact has been deleted", Toast.LENGTH_SHORT).show();
-            finish();
+            Toast.makeText(getActivity(), "Contact has been deleted", Toast.LENGTH_SHORT).show();
+//            getActivity().finish();
+
+            getFragmentManager().beginTransaction().add(R.id.container, new list_contact()).commit();
 
         }
 
-//        else if (v.getId() == (R.id.contact_exit))
-//        {
-////            Intent intent = new Intent(this, select_action.class);
-////            startActivity(intent);
-//        }
-
+        if (v.getId() == R.id.back)
+        {
+            getFragmentManager().beginTransaction().add(R.id.container, new list_contact()).commit();
+        }
 
     }
+
+
+
 }

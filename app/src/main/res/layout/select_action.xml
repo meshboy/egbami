@@ -1,17 +1,17 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
+    android:padding="5dp"
     tools:context=".MainActivity"
     >
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-
-
-        android:layout_marginTop="30dp"
+        android:layout_gravity="center_vertical"
         android:background="@color/white"
 
         >
@@ -28,12 +28,12 @@
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/run"
+                android:id="@+id/speed_dial"
 
                 android:background="@android:color/transparent"
                 android:layout_gravity="center_horizontal"
 
-                android:src="@drawable/view1" />
+                android:src="@drawable/speed" />
 
             <ImageButton
                 android:layout_width="wrap_content"
@@ -41,50 +41,29 @@
                 android:layout_marginLeft="100dip"
                 android:id="@+id/service"
                 android:background="@android:color/transparent"
-                android:src="@drawable/view2"
+                android:src="@drawable/emers"
 
                 android:layout_gravity="center_vertical" />
         </LinearLayout>
 
-        <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="fill_parent"
-            android:gravity="center_horizontal"
-            android:layout_marginTop="10dp"
-            android:layout_height="wrap_content">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Speed Dial"
-                android:textStyle="bold"
-                android:layout_gravity="center_horizontal"
-                android:id="@+id/textView" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Emergency\n Service"
-                android:textStyle="bold"
-                android:layout_marginLeft="150dip"
-                android:id="@+id/textView2" />
-        </LinearLayout>
 
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
+            android:id="@+id/first_button"
 
             android:gravity="center_horizontal">
 
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/sos"
-                android:id="@+id/imageButton"
+                android:src="@drawable/changestate"
+                android:id="@+id/sos"
                 android:background="@android:color/transparent"
                 android:layout_gravity="center_vertical" />
         </LinearLayout>
+
 
         <LinearLayout
             android:orientation="horizontal"
@@ -97,45 +76,22 @@
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/history"
+                android:id="@+id/record"
 
                 android:background="@android:color/transparent"
-                android:src="@drawable/view3" />
+                android:src="@drawable/medical" />
 
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="100dp"
-                android:id="@+id/sos"
+                android:id="@+id/about"
                 android:background="@android:color/transparent"
 
-                android:src="@drawable/view4" />
+                android:src="@drawable/abouts" />
 
         </LinearLayout>
 
-        <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="fill_parent"
-            android:gravity="center_horizontal"
-            android:layout_marginTop="20dp"
-            android:layout_height="wrap_content">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Medical Record"
-                android:textStyle="bold"
-                android:layout_gravity="center_horizontal"
-                android:id="@+id/textView3" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="About"
-                android:textStyle="bold"
-                android:layout_marginLeft="120dip"
-                android:id="@+id/textView4" />
-        </LinearLayout>
 
 
     </LinearLayout>
@@ -143,4 +99,4 @@
 
 
 
-</RelativeLayout>
+</FrameLayout>

@@ -47,18 +47,6 @@ ADDED from AndroidManifest.xml:19:9
 		ADDED from AndroidManifest.xml:19:72
 	android:name
 		ADDED from AndroidManifest.xml:19:19
-activity#com.example.root.egbami.edit_contact
-ADDED from AndroidManifest.xml:21:9
-	android:label
-		ADDED from AndroidManifest.xml:21:71
-	android:name
-		ADDED from AndroidManifest.xml:21:19
-activity#com.example.root.egbami.list_contact
-ADDED from AndroidManifest.xml:22:9
-	android:label
-		ADDED from AndroidManifest.xml:22:71
-	android:name
-		ADDED from AndroidManifest.xml:22:19
 activity#com.example.root.egbami.emergency_tabs
 ADDED from AndroidManifest.xml:23:9
 	android:label

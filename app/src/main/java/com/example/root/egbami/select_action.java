@@ -1,23 +1,36 @@
 package com.example.root.egbami;
 
+import android.annotation.TargetApi;
+import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
+import android.graphics.drawable.Drawable;
+import android.graphics.drawable.DrawableContainer;
+import android.os.Build;
 import android.os.Bundle;
+import android.support.v4.app.FragmentActivity;
 import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageButton;
+import android.widget.LinearLayout;
+import android.widget.Toast;
 
 /**
  * Created by root on 2/20/15.
  */
 public class select_action extends ActionBarActivity implements View.OnClickListener
+
 {
-    private ImageButton run;
+    private ImageButton speed_dial;
     private ImageButton service;
-    private ImageButton history;
+    private ImageButton record;
     private ImageButton sos;
+    private ImageButton about;
+    private ImageButton onPressed;
+    @TargetApi(Build.VERSION_CODES.JELLY_BEAN)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,15 +38,18 @@ public class select_action extends ActionBarActivity implements View.OnClickList
 
 
 
-        run = (ImageButton) findViewById(R.id.run);
-//        run.setBackgroundColor(Color.TRANSPARENT);
+        speed_dial = (ImageButton) findViewById(R.id.speed_dial);
         service = (ImageButton) findViewById(R.id.service);
-        history = (ImageButton) findViewById(R.id.history);
+        record = (ImageButton) findViewById(R.id.record);
         sos = (ImageButton) findViewById(R.id.sos);
+        about = (ImageButton) findViewById(R.id.about);
 
-        run.setOnClickListener(this);
+
+
+        about.setOnClickListener(this);
+        speed_dial.setOnClickListener(this);
         service.setOnClickListener(this);
-        history.setOnClickListener(this);
+        record.setOnClickListener(this);
         sos.setOnClickListener(this);
 
 
@@ -41,14 +57,14 @@ public class select_action extends ActionBarActivity implements View.OnClickList
 
     }
 
+    @TargetApi(Build.VERSION_CODES.HONEYCOMB)
     @Override
     public void onClick(View v) {
 
-        if(v.getId() == R.id.run)
-        {
-            Intent intent = new Intent(this, com.example.root.egbami.list_contact.class);
-            startActivity(intent);
-
+        if(v.getId() == R.id.speed_dial) {
+            getSupportFragmentManager().beginTransaction()
+                    .replace(R.id.container, new list_contact())
+                    .commit();
         }
 
         if(v.getId() == R.id.service)
@@ -56,15 +72,21 @@ public class select_action extends ActionBarActivity implements View.OnClickList
             Intent intent = new Intent(this, emergency_tabs.class);
             startActivity(intent);
         }
-        if(v.getId() == R.id.history)
+        if(v.getId() == R.id.record)
         {
             Intent intent = new Intent(this, medical_hist_tabs.class);
             startActivity(intent);
 
         }
-        if(v.getId() == R.id.run)
+        if(v.getId() == R.id.sos)
         {
+            getSupportFragmentManager().beginTransaction().add(R.id.container, new sos()).commit();
 
+        }
+
+        if(v.getId() == R.id.about)
+        {
+            getSupportFragmentManager().beginTransaction().replace(R.id.container, new sos()).commit();
         }
 
     }

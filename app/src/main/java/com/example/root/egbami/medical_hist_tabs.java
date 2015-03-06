@@ -25,6 +25,9 @@ import android.view.View;
 import android.widget.TextView;
 
 import java.util.logging.Handler;
+
+import static android.graphics.Color.RED;
+
 /**
  * Created by root on 3/2/15.
  */
@@ -70,11 +73,16 @@ public class medical_hist_tabs  extends ActionBarActivity implements
 
         actionBar = getSupportActionBar();
 
+
+//        actionBar.setBackgroundDrawable());
+
         actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
+//        actionBar.setBackgroundDrawable(new Color());
 
         android.support.v7.app.ActionBar.Tab tab1;
         tab1 = actionBar.newTab();
         tab1.setText( "Medical History");
+
         tab1.setTabListener(this);
 
         android.support.v7.app.ActionBar.Tab tab2 = actionBar.newTab();

@@ -105,12 +105,41 @@
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
             android:gravity="center_horizontal"
-            android:text="cancel"
+            android:text="delete"
             android:background="@drawable/button_shape"
             android:textColor="@color/white"
             android:id="@+id/contact_del" />
 
 
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/button_shape"
+        android:gravity="center_horizontal"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/back"
+
+            android:layout_marginRight="70dp"
+            android:src="@drawable/ic_action_back"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="70dp"
+            android:id="@+id/forward"
+            android:src="@drawable/ic_action_forward"/>
     </LinearLayout>
 
 </LinearLayout><!-- From: file:/root/AndroidStudioProjects/Egbami/app/src/main/res/layout/edit_contacts.xml -->

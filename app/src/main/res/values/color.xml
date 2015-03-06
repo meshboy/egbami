@@ -9,4 +9,9 @@
     <color name="dred">#FFCD0511</color>
     <color name="hint">#54000000</color>
 
+    <color name="transparent">#00000000</color>
+    <color name="tab_highlight">#ff9ecfbf</color>
+
+    <color name="back">#ff9ecfbf</color>
+
 </resources>
