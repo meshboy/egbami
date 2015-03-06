@@ -29,10 +29,7 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
 
         try
         {
-            Intent intent = new Intent(MainActivity.this, com.example.root.egbami.select_action.class);
-            startActivity(intent);
 
-            Thread.sleep(3000);
         }
         catch(Exception e)
         {
@@ -42,6 +39,11 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
 
         start = (TextView) findViewById(R.id.start);
         start.setOnClickListener(this);
+    }
+
+    @Override
+    public void onBackPressed() {
+        super.finish();
     }
 
     @Override

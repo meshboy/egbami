@@ -2,6 +2,8 @@ package com.example.root.egbami;
 
 import android.annotation.TargetApi;
 import android.app.Activity;
+import android.app.Fragment;
+import android.app.FragmentManager;
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
@@ -57,6 +59,17 @@ public class select_action extends ActionBarActivity implements View.OnClickList
 
     }
 
+    @Override
+    public void onBackPressed() {
+        Intent intent = new Intent(Intent.ACTION_MAIN);
+
+        intent.addCategory(Intent.CATEGORY_HOME);
+
+        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        startActivity(intent);
+        finish();
+    }
+
     @TargetApi(Build.VERSION_CODES.HONEYCOMB)
     @Override
     public void onClick(View v) {
@@ -74,9 +87,7 @@ public class select_action extends ActionBarActivity implements View.OnClickList
         }
         if(v.getId() == R.id.record)
         {
-            Intent intent = new Intent(this, medical_hist_tabs.class);
-            startActivity(intent);
-
+            getSupportFragmentManager().beginTransaction().add(R.id.container, new med_history_frag()).commit();
         }
         if(v.getId() == R.id.sos)
         {

@@ -15,7 +15,7 @@ import android.widget.TextView;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class med_history_frag extends Fragment {
+public class med_history_frag extends Fragment implements View.OnClickListener{
 
     Button edit;
     private TextView name, natn, allergy, bldgrp, diabetic, med_cond, med_ins, on_med;
@@ -45,6 +45,9 @@ public class med_history_frag extends Fragment {
         med_cond = (TextView) view.findViewById(R.id.med_condition);
         med_ins = (TextView) view.findViewById(R.id.insurance);
         on_med = (TextView) view.findViewById(R.id.on_med);
+
+        edit = (Button) view.findViewById(R.id.edit_record);
+        edit.setOnClickListener(this);
 
 
         dataRepo repo = new dataRepo(getActivity());
@@ -91,10 +94,12 @@ public class med_history_frag extends Fragment {
     }
 
 
+    @Override
+    public void onClick(View v) {
 
-
-
-
-
-
+        if (v.getId() == R.id.edit_record)
+        {
+            getFragmentManager().beginTransaction().add(R.id.container, new edit_med_hist_frag()).commit();
+        }
+    }
 }
