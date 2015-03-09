@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white">
+    android:background="@drawable/homepage">
 
 
 
@@ -18,7 +18,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:src="@drawable/rescue"
+            android:src="@drawable/rescuebus"
             android:id="@+id/imageView3" />
         </LinearLayout>
 
@@ -37,6 +37,8 @@
                 android:orientation="horizontal"
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
+                android:background="@drawable/button_shape"
+                android:layout_marginBottom="5dp"
                 android:padding="20dp">
 
                 <TextView
@@ -46,19 +48,30 @@
                     android:textStyle="bold"
                     android:textColor="@color/red"
                     android:layout_marginRight="150dp"
-                    android:id="@+id/textView16" />
+                    android:id="@+id/abia" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/abia_p"
-                    android:id="@+id/textView18" />
+                    android:textColor="@color/blue"
+                    android:background="@drawable/textviewchange"
+                    android:id="@+id/abia_" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-13dp"
+                    android:src="@drawable/calllogo"
+                    android:id="@+id/abia1_" />
             </LinearLayout>
 
             <LinearLayout
                 android:orientation="horizontal"
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
+                android:background="@drawable/button_shape"
+                android:layout_marginBottom="5dp"
                 android:padding="20dp">
 
                 <TextView
@@ -74,13 +87,23 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/adamawa_p"
+                    android:background="@drawable/textviewchange"
+                    android:textColor="@color/blue"
                     android:id="@+id/adama_" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-13dp"
+                    android:src="@drawable/calllogo"
+                    android:id="@+id/adama1_" />
             </LinearLayout>
 
             <LinearLayout
                 android:orientation="horizontal"
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
+                android:background="@drawable/button_shape"
+                android:layout_marginBottom="5dp"
                 android:padding="20dp">
 
                 <TextView
@@ -96,13 +119,25 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/awka_p"
+                    android:background="@drawable/textviewchange"
+                    android:textColor="@color/blue"
                     android:id="@+id/awka_" />
+
+                <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-13dp"
+                android:src="@drawable/calllogo"
+                android:id="@+id/awka1_" />
+
             </LinearLayout>
 
             <LinearLayout
                 android:orientation="horizontal"
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
+                android:background="@drawable/button_shape"
+                android:layout_marginBottom="5dp"
                 android:padding="20dp">
 
                 <TextView
@@ -118,7 +153,15 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/anambra_p"
+                    android:background="@drawable/textviewchange"
+                    android:textColor="@color/blue"
                     android:id="@+id/anamb_" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-13dp"
+                    android:src="@drawable/calllogo"
+                    android:id="@+id/anamb1_" />
             </LinearLayout>
 
 
@@ -126,6 +169,8 @@
                 android:orientation="horizontal"
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
+                android:background="@drawable/button_shape"
+                android:layout_marginBottom="5dp"
                 android:padding="20dp">
 
                 <TextView
@@ -141,13 +186,23 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/bauchi_p"
+                    android:background="@drawable/textviewchange"
+                    android:textColor="@color/blue"
                     android:id="@+id/bauchi_" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-13dp"
+                    android:src="@drawable/calllogo"
+                    android:id="@+id/bauchi1_" />
             </LinearLayout>
 
             <LinearLayout
                 android:orientation="horizontal"
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
+                android:background="@drawable/button_shape"
+                android:layout_marginBottom="5dp"
                 android:padding="20dp">
 
                 <TextView
@@ -163,13 +218,23 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/bayelsa_p"
+                    android:background="@drawable/textviewchange"
+                    android:textColor="@color/blue"
                     android:id="@+id/bay_" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-13dp"
+                    android:src="@drawable/calllogo"
+                    android:id="@+id/bay1_" />
             </LinearLayout>
 
             <LinearLayout
                 android:orientation="horizontal"
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
+                android:background="@drawable/button_shape"
+                android:layout_marginBottom="5dp"
                 android:padding="20dp">
 
                 <TextView
@@ -185,13 +250,23 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/benue_p"
+                    android:background="@drawable/textviewchange"
+                    android:textColor="@color/blue"
                     android:id="@+id/benue_" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-13dp"
+                    android:src="@drawable/calllogo"
+                    android:id="@+id/benue1_" />
             </LinearLayout>
 
             <LinearLayout
                 android:orientation="horizontal"
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
+                android:background="@drawable/button_shape"
+                android:layout_marginBottom="5dp"
                 android:padding="20dp">
 
                 <TextView
@@ -207,13 +282,23 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/borno_p"
+                    android:background="@drawable/textviewchange"
+                    android:textColor="@color/blue"
                     android:id="@+id/borno_" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-13dp"
+                    android:src="@drawable/calllogo"
+                    android:id="@+id/borno1_" />
             </LinearLayout>
 
             <LinearLayout
                 android:orientation="horizontal"
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
+                android:background="@drawable/button_shape"
+                android:layout_marginBottom="5dp"
                 android:padding="20dp">
 
                 <TextView
@@ -229,13 +314,23 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/crossriver_p"
+                    android:background="@drawable/textviewchange"
+                    android:textColor="@color/blue"
                     android:id="@+id/cross_" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-13dp"
+                    android:src="@drawable/calllogo"
+                    android:id="@+id/cross1_" />
             </LinearLayout>
 
             <LinearLayout
                 android:orientation="horizontal"
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
+                android:background="@drawable/button_shape"
+                android:layout_marginBottom="5dp"
                 android:padding="20dp">
 
                 <TextView
@@ -251,13 +346,23 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/delta_p"
+                    android:background="@drawable/textviewchange"
+                    android:textColor="@color/blue"
                     android:id="@+id/delta_" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-13dp"
+                    android:src="@drawable/calllogo"
+                    android:id="@+id/delta1_" />
             </LinearLayout>
 
             <LinearLayout
                 android:orientation="horizontal"
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
+                android:background="@drawable/button_shape"
+                android:layout_marginBottom="5dp"
                 android:padding="20dp">
 
                 <TextView
@@ -273,12 +378,22 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/ebonyi_p"
+                    android:background="@drawable/textviewchange"
+                    android:textColor="@color/blue"
                     android:id="@+id/ebony_" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-13dp"
+                    android:src="@drawable/calllogo"
+                    android:id="@+id/ebony1_" />
             </LinearLayout>
             <LinearLayout
                 android:orientation="horizontal"
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
+                android:background="@drawable/button_shape"
+                android:layout_marginBottom="5dp"
                 android:padding="20dp">
 
                 <TextView
@@ -294,12 +409,22 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/edo_p"
+                    android:background="@drawable/textviewchange"
+                    android:textColor="@color/blue"
                     android:id="@+id/edo_" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-13dp"
+                    android:src="@drawable/calllogo"
+                    android:id="@+id/edo1_" />
             </LinearLayout>
             <LinearLayout
                 android:orientation="horizontal"
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
+                android:background="@drawable/button_shape"
+                android:layout_marginBottom="5dp"
                 android:padding="20dp">
 
                 <TextView
@@ -315,13 +440,23 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/ekiti_p"
+                    android:background="@drawable/textviewchange"
+                    android:textColor="@color/blue"
                     android:id="@+id/ekiti_" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-13dp"
+                    android:src="@drawable/calllogo"
+                    android:id="@+id/ekiti1_" />
             </LinearLayout>
 
             <LinearLayout
                 android:orientation="horizontal"
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
+                android:background="@drawable/button_shape"
+                android:layout_marginBottom="5dp"
                 android:padding="20dp">
 
                 <TextView
@@ -337,11 +472,21 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/enugu_p"
+                    android:background="@drawable/textviewchange"
+                    android:textColor="@color/blue"
                     android:id="@+id/enugu_" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-13dp"
+                    android:src="@drawable/calllogo"
+                    android:id="@+id/enugu1_" />
                 <LinearLayout
                     android:orientation="horizontal"
                     android:layout_width="fill_parent"
                     android:layout_height="fill_parent"
+                    android:background="@drawable/button_shape"
+                    android:layout_marginBottom="5dp"
                     android:padding="20dp">
 
                     <TextView
@@ -357,7 +502,15 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/gombe_p"
+                        android:background="@drawable/textviewchange"
+                        android:textColor="@color/blue"
                         android:id="@+id/gombe_" />
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-13dp"
+                        android:src="@drawable/calllogo"
+                        android:id="@+id/gombe1_" />
                 </LinearLayout>
             </LinearLayout>
 
@@ -365,6 +518,8 @@
                 android:orientation="horizontal"
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
+                android:background="@drawable/button_shape"
+                android:layout_marginBottom="5dp"
                 android:padding="20dp">
 
                 <TextView
@@ -380,13 +535,24 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/imo_p"
+                    android:background="@drawable/textviewchange"
+                    android:textColor="@color/blue"
                     android:id="@+id/imo_" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-13dp"
+                    android:src="@drawable/calllogo"
+                    android:id="@+id/imo1_" />
             </LinearLayout>
 
             <LinearLayout
                 android:orientation="horizontal"
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
+                android:background="@drawable/button_shape"
+                android:layout_marginBottom="5dp"
                 android:padding="20dp">
 
                 <TextView
@@ -402,13 +568,23 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/jigawa_p"
+                    android:background="@drawable/textviewchange"
+                    android:textColor="@color/blue"
                     android:id="@+id/jigawa_" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-13dp"
+                    android:src="@drawable/calllogo"
+                    android:id="@+id/jigawa1_" />
             </LinearLayout>
 
             <LinearLayout
                 android:orientation="horizontal"
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
+                android:background="@drawable/button_shape"
+                android:layout_marginBottom="5dp"
                 android:padding="20dp">
 
                 <TextView
@@ -424,13 +600,23 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/kadnuna_p"
+                    android:background="@drawable/textviewchange"
+                    android:textColor="@color/blue"
                     android:id="@+id/kaduna_" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-13dp"
+                    android:src="@drawable/calllogo"
+                    android:id="@+id/kaduna1_" />
             </LinearLayout>
 
             <LinearLayout
                 android:orientation="horizontal"
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
+                android:background="@drawable/button_shape"
+                android:layout_marginBottom="5dp"
                 android:padding="20dp">
 
                 <TextView
@@ -446,13 +632,23 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/kano_p"
+                    android:background="@drawable/textviewchange"
+                    android:textColor="@color/blue"
                     android:id="@+id/kano_" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-13dp"
+                    android:src="@drawable/calllogo"
+                    android:id="@+id/kano1_" />
             </LinearLayout>
 
             <LinearLayout
                 android:orientation="horizontal"
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
+                android:background="@drawable/button_shape"
+                android:layout_marginBottom="5dp"
                 android:padding="20dp">
 
                 <TextView
@@ -468,13 +664,23 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/katsina_p"
+                    android:background="@drawable/textviewchange"
+                    android:textColor="@color/blue"
                     android:id="@+id/katisna_" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-13dp"
+                    android:src="@drawable/calllogo"
+                    android:id="@+id/katisna1_" />
             </LinearLayout>
 
             <LinearLayout
                 android:orientation="horizontal"
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
+                android:background="@drawable/button_shape"
+                android:layout_marginBottom="5dp"
                 android:padding="20dp">
 
                 <TextView
@@ -490,13 +696,23 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/kebbi_p"
+                    android:background="@drawable/textviewchange"
+                    android:textColor="@color/blue"
                     android:id="@+id/kebbi_" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-13dp"
+                    android:src="@drawable/calllogo"
+                    android:id="@+id/kebbi1_" />
             </LinearLayout>
 
             <LinearLayout
                 android:orientation="horizontal"
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
+                android:background="@drawable/button_shape"
+                android:layout_marginBottom="5dp"
                 android:padding="20dp">
 
                 <TextView
@@ -512,7 +728,15 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/kogi_p"
+                    android:background="@drawable/textviewchange"
+                    android:textColor="@color/blue"
                     android:id="@+id/kogi_" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-13dp"
+                    android:src="@drawable/calllogo"
+                    android:id="@+id/kogi1_" />
             </LinearLayout>
 
 
@@ -520,6 +744,8 @@
                 android:orientation="horizontal"
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
+                android:background="@drawable/button_shape"
+                android:layout_marginBottom="5dp"
                 android:padding="20dp">
 
                 <TextView
@@ -535,13 +761,23 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/kwara_p"
+                    android:background="@drawable/textviewchange"
+                    android:textColor="@color/blue"
                     android:id="@+id/kwara_" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-13dp"
+                    android:src="@drawable/calllogo"
+                    android:id="@+id/kwara1_" />
             </LinearLayout>
 
             <LinearLayout
                 android:orientation="horizontal"
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
+                android:background="@drawable/button_shape"
+                android:layout_marginBottom="5dp"
                 android:padding="20dp">
 
                 <TextView
@@ -557,13 +793,23 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/lagos_p"
+                    android:background="@drawable/textviewchange"
+                    android:textColor="@color/blue"
                     android:id="@+id/lagos_" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-13dp"
+                    android:src="@drawable/calllogo"
+                    android:id="@+id/lagos1_" />
             </LinearLayout>
 
             <LinearLayout
                 android:orientation="horizontal"
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
+                android:background="@drawable/button_shape"
+                android:layout_marginBottom="5dp"
                 android:padding="20dp">
 
                 <TextView
@@ -580,12 +826,15 @@
                     android:layout_height="wrap_content"
                     android:text="@string/nasa_p"
                     android:id="@+id/nasa_" />
+
             </LinearLayout>
 
             <LinearLayout
                 android:orientation="horizontal"
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
+                android:background="@drawable/button_shape"
+                android:layout_marginBottom="5dp"
                 android:padding="20dp">
 
                 <TextView
@@ -601,13 +850,23 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/niger_p"
+                    android:background="@drawable/textviewchange"
+                    android:textColor="@color/blue"
                     android:id="@+id/niger_" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-13dp"
+                    android:src="@drawable/calllogo"
+                    android:id="@+id/niger1_" />
             </LinearLayout>
 
             <LinearLayout
                 android:orientation="horizontal"
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
+                android:background="@drawable/button_shape"
+                android:layout_marginBottom="5dp"
                 android:padding="20dp">
 
                 <TextView
@@ -623,13 +882,23 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/ogun_p"
+                    android:background="@drawable/textviewchange"
+                    android:textColor="@color/blue"
                     android:id="@+id/ogun_" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-13dp"
+                    android:src="@drawable/calllogo"
+                    android:id="@+id/ogun1_" />
             </LinearLayout>
 
             <LinearLayout
                 android:orientation="horizontal"
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
+                android:background="@drawable/button_shape"
+                android:layout_marginBottom="5dp"
                 android:padding="20dp">
 
                 <TextView
@@ -645,12 +914,22 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/ondo_p"
+                    android:background="@drawable/textviewchange"
+                    android:textColor="@color/blue"
                     android:id="@+id/ondo_" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-13dp"
+                    android:src="@drawable/calllogo"
+                    android:id="@+id/ondo1_" />
             </LinearLayout>
             <LinearLayout
                 android:orientation="horizontal"
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
+                android:background="@drawable/button_shape"
+                android:layout_marginBottom="5dp"
                 android:padding="20dp">
 
                 <TextView
@@ -666,7 +945,15 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/osun_p"
+                    android:background="@drawable/textviewchange"
+                    android:textColor="@color/blue"
                     android:id="@+id/osun_" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-13dp"
+                    android:src="@drawable/calllogo"
+                    android:id="@+id/osun1_" />
             </LinearLayout>
 
 
@@ -674,6 +961,8 @@
                 android:orientation="horizontal"
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
+                android:background="@drawable/button_shape"
+                android:layout_marginBottom="5dp"
                 android:padding="20dp">
 
                 <TextView
@@ -689,13 +978,23 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/oyo_p"
+                    android:background="@drawable/textviewchange"
+                    android:textColor="@color/blue"
                     android:id="@+id/oyo_" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-13dp"
+                    android:src="@drawable/calllogo"
+                    android:id="@+id/oyo1_" />
             </LinearLayout>
 
             <LinearLayout
                 android:orientation="horizontal"
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
+                android:background="@drawable/button_shape"
+                android:layout_marginBottom="5dp"
                 android:padding="20dp">
 
                 <TextView
@@ -711,13 +1010,23 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/plateu_p"
+                    android:background="@drawable/textviewchange"
+                    android:textColor="@color/blue"
                     android:id="@+id/plateu_" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-13dp"
+                    android:src="@drawable/calllogo"
+                    android:id="@+id/plateu1_" />
             </LinearLayout>
 
             <LinearLayout
                 android:orientation="horizontal"
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
+                android:background="@drawable/button_shape"
+                android:layout_marginBottom="5dp"
                 android:padding="20dp">
 
                 <TextView
@@ -733,13 +1042,23 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/rivers_p"
+                    android:background="@drawable/textviewchange"
+                    android:textColor="@color/blue"
                     android:id="@+id/river_" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-13dp"
+                    android:src="@drawable/calllogo"
+                    android:id="@+id/river1_" />
             </LinearLayout>
 
             <LinearLayout
                 android:orientation="horizontal"
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
+                android:background="@drawable/button_shape"
+                android:layout_marginBottom="5dp"
                 android:padding="20dp">
 
                 <TextView
@@ -755,13 +1074,23 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/sokoto_p"
+                    android:background="@drawable/textviewchange"
+                    android:textColor="@color/blue"
                     android:id="@+id/sokoto_" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-13dp"
+                    android:src="@drawable/calllogo"
+                    android:id="@+id/sokoto1_" />
             </LinearLayout>
 
             <LinearLayout
                 android:orientation="horizontal"
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
+                android:background="@drawable/button_shape"
+                android:layout_marginBottom="5dp"
                 android:padding="20dp">
 
                 <TextView
@@ -777,13 +1106,23 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/taraba_p"
+                    android:background="@drawable/textviewchange"
+                    android:textColor="@color/blue"
                     android:id="@+id/taraba_" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-13dp"
+                    android:src="@drawable/calllogo"
+                    android:id="@+id/taraba1_" />
             </LinearLayout>
 
             <LinearLayout
                 android:orientation="horizontal"
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
+                android:background="@drawable/button_shape"
+                android:layout_marginBottom="5dp"
                 android:padding="20dp">
 
                 <TextView
@@ -800,12 +1139,15 @@
                     android:layout_height="wrap_content"
                     android:text="@string/yobe_p"
                     android:id="@+id/yobe_" />
+
             </LinearLayout>
 
             <LinearLayout
                 android:orientation="horizontal"
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
+                android:background="@drawable/button_shape"
+                android:layout_marginBottom="5dp"
                 android:padding="20dp">
 
                 <TextView
@@ -821,7 +1163,16 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/zamfara_p"
+                    android:background="@drawable/textviewchange"
+                    android:textColor="@color/blue"
+
                     android:id="@+id/zamfara_" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-13dp"
+                    android:src="@drawable/calllogo"
+                    android:id="@+id/zamfara1_" />
             </LinearLayout>
 
 

@@ -2,7 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white">
+    android:background="@drawable/homepage">
 
 
 
@@ -11,15 +11,15 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
-        android:background="@color/white">
+        >
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:src="@drawable/ambulance"
+            android:src="@drawable/pulse"
             android:id="@+id/imageView4"
-            android:layout_marginTop="50dp"/>
+            android:layout_marginTop="30dp"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -27,21 +27,33 @@
             android:text="Emergency hotline"
             android:gravity="center"
             android:layout_gravity="center"
-            android:layout_marginTop="100dp"
+            android:layout_marginTop="80dp"
             android:textColor="@color/red"
             android:textSize="30sp"
             android:textStyle="bold"
             android:id="@+id/textView26" />
 
-        <TextView
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="01-2800911"
-            android:textStyle="bold"
-            android:textSize="20sp"
-            android:layout_marginTop="30dp"
-            android:layout_gravity="center"
-            android:id="@+id/textView27" />
+            android:background="@drawable/button_shape"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="01-2800911"
+                android:background="@drawable/textviewchange"
+                android:textColor="@color/blue"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:id="@+id/emergency"
+            />
+        </LinearLayout>
+
     </LinearLayout>
 
 </RelativeLayout>

@@ -23,10 +23,5 @@
         android:orderInCategory="100"
         app:showAsAction="never" />
 
-    <item android:id="@+id/refresh"
-        android:title="refresh"
-        android:orderInCategory="100"
-        android:icon="@drawable/ic_action_refresh"
 
-        app:showAsAction="always" />
 </menu>

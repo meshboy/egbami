@@ -2,7 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white">
+    android:background="@drawable/homepage">
 
 
     <LinearLayout
@@ -10,87 +10,119 @@
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:gravity="center_horizontal"
-        android:padding="20dp">
+       >
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/imageView2"
-            android:src="@drawable/fire"
+            android:src="@drawable/fireex"
             android:layout_marginTop="40dp"
             android:layout_gravity="center"/>
 
-        <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="fill_parent"
+        <ScrollView
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="30dp"
-            android:layout_marginTop="30dp">
+            android:id="@+id/scrollView4" >
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Fire Outbreak"
-                android:textColor="@color/red"
-                android:textStyle="bold"
-                android:layout_marginRight="100dp"
-                android:textSize="20sp"
-                android:id="@+id/textView16" />
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="099"
-                android:textSize="20sp"
-                android:id="@+id/textView18" />
-        </LinearLayout>
 
-        <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="30dp">
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_shape"
+                    android:padding="20dp"
+                    android:layout_marginBottom="20dp"
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Flood"
-                android:textSize="20sp"
-                android:layout_marginRight="175dp"
-                android:textColor="@color/red"
-                android:textStyle="bold"
-                android:id="@+id/textView20" />
+                    android:layout_marginTop="30dp">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="098"
-                android:textSize="20sp"
-                android:id="@+id/textView22" />
-        </LinearLayout>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Fire Outbreak"
+                        android:textColor="@color/red"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="100dp"
+                        android:textSize="20sp"
+                        android:id="@+id/textView16" />
 
-        <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="099"
+                        android:background="@drawable/textviewchange"
+                        android:textColor="@color/blue"
+                        android:textSize="20sp"
+                        android:id="@+id/fireone" />
+                </LinearLayout>
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Collapsed Building"
-                android:textStyle="bold"
-                android:textSize="20sp"
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_shape"
+                    android:padding="20dp"
+                    android:layout_marginBottom="20dp">
 
-                android:layout_marginRight="60dp"
-                android:textColor="@color/red"
-                android:id="@+id/textView24" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Flood"
+                        android:textSize="20sp"
+                        android:layout_marginRight="173dp"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="@color/red"
+                        android:textStyle="bold"
+                        android:id="@+id/textView20" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="097"
-                android:textSize="20sp"
-                android:id="@+id/textView25" />
-        </LinearLayout>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="098"
+                        android:background="@drawable/textviewchange"
+                        android:textColor="@color/blue"
+                        android:textSize="20sp"
+                        android:id="@+id/firetwo" />
+                </LinearLayout>
 
-        </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_shape"
+                    android:layout_marginBottom="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Collapsed Building"
+                        android:textStyle="bold"
+                        android:padding="20dp"
+                        android:textSize="20sp"
+
+                        android:layout_marginRight="34dp"
+                        android:textColor="@color/red"
+                        android:layout_marginLeft="10dp"
+                        android:id="@+id/textView24" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="097"
+                        android:background="@drawable/textviewchange"
+                        android:textColor="@color/blue"
+                        android:textSize="20sp"
+                        android:id="@+id/firethree" />
+                </LinearLayout>
+
+                </LinearLayout>
+        </ScrollView>
+
+
+    </LinearLayout>
 </RelativeLayout><!-- From: file:/root/AndroidStudioProjects/Egbami/app/src/main/res/layout/fire.xml -->

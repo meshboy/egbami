@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">SOS</string>
+    <string name="app_name">Egbami</string>
 
 
     <string name="contact">Speed Dial</string>
@@ -9,7 +9,7 @@
     <string name="medical">Record</string>
     <string name="sos">SOS</string>
 
-
+    <string name="emailEmergency">Emergency </string>
 
     <string name="emergency">Emergency service provides \n easy access to PRO of the units</string>
     <string name="abia_n">Abia</string>

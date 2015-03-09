@@ -7,6 +7,7 @@ import android.database.sqlite.SQLiteDatabase;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 
 /**
  * Created by root on 2/19/15.
@@ -266,6 +267,38 @@ public class dataRepo
 
 
 
+    }
+
+    public ArrayList<HashMap<String, String>>  getphoneAndEmail()
+    {
+        SQLiteDatabase db = dbHelper.getReadableDatabase();
+        String selectQuery =  "SELECT  " +
+                contactProfile.KEY_ID + "," +
+                contactProfile.KEY_NAME + "," +
+                contactProfile.KEY_EMAIL + "," +
+                contactProfile.KEY_PHONE +
+                " FROM " + contactProfile.contact_TABLE;
+
+        //Student student = new Student();
+        ArrayList<HashMap<String, String>> contactList = new ArrayList<HashMap<String, String>>();
+
+        Cursor cursor = db.rawQuery(selectQuery, null);
+        // looping through all rows and adding to list
+
+        if (cursor.moveToFirst()) {
+            do {
+                HashMap<String, String> contact = new HashMap<String, String>();
+//                student.put("id", cursor.getString(cursor.getColumnIndex(contactProfile.KEY_ID)));
+                contact.put("phone", cursor.getString(cursor.getColumnIndex(contactProfile.KEY_PHONE)));
+                contact.put("email", cursor.getString(cursor.getColumnIndex(contactProfile.KEY_EMAIL)));
+                contactList.add(contact);
+
+            } while (cursor.moveToNext());
+        }
+
+        cursor.close();
+        db.close();
+        return contactList;
     }
 
 

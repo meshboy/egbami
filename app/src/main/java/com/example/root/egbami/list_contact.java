@@ -39,6 +39,7 @@ public class list_contact extends Fragment implements View.OnClickListener {
         // Required empty public constructor
     }
 
+
     @Override
     public void onClick(View v) {
 
@@ -47,10 +48,11 @@ public class list_contact extends Fragment implements View.OnClickListener {
             os.putInt("contact", 0);
 
             getFragmentManager().beginTransaction()
-                    .add(R.id.container, new edit_contact())
+                    .add(R.id.container, new edit_contact()).addToBackStack(null)
                     .commit();
         }
     }
+
 
 
     @Override

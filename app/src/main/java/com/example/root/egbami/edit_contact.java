@@ -27,7 +27,7 @@ public class edit_contact extends Fragment implements View.OnClickListener{
     private Button save;
     private Button delete;
     private Button exit;
-    private ImageButton back, forward;
+
 
     private int contact_id =0 ;
 
@@ -61,10 +61,9 @@ public class edit_contact extends Fragment implements View.OnClickListener{
         delete = (Button) view.findViewById(R.id.contact_del);
 
 
-        back = (ImageButton) view.findViewById(R.id.back);
-        forward =(ImageButton) view.findViewById(R.id.forward);
 
-        back.setOnClickListener(this);
+
+
 
         save.setOnClickListener(this);
         delete.setOnClickListener(this);
@@ -105,24 +104,36 @@ public class edit_contact extends Fragment implements View.OnClickListener{
     @Override
     public void onClick(View v) {
         if (v.getId() == (R.id.contact_save)) {
+
             dataRepo getContactData = new dataRepo(getActivity());
 
             contactProfile contact = new contactProfile();
 
-            contact.contactName = name.getText().toString();
-            contact.contactEmail = email.getText().toString();
-            contact.contactPhone = phone.getText().toString();
+            if (!((name.getText().toString().length() <= 0)&&(email.getText().toString().length() <=0)))
+            {
+                contact.contactName = name.getText().toString();
+                contact.contactEmail = email.getText().toString();
+                contact.contactPhone = phone.getText().toString();
 
-            contact.contatcId = contact_id;
+                contact.contatcId = contact_id;
 
-            if (contact_id == 0) {
-                contact_id = getContactData.insertContact(contact);
-                Toast.makeText(getActivity(), "New Contact has been added", Toast.LENGTH_SHORT).show();
-            } else {
-                getContactData.updateContact(contact);
-                Toast.makeText(getActivity(), "Contact has been updated", Toast.LENGTH_SHORT).show();
-
+                if (contact_id == 0) {
+                    contact_id = getContactData.insertContact(contact);
+                    Toast.makeText(getActivity(), "New Contact has been added", Toast.LENGTH_SHORT).show();
+                    getFragmentManager().beginTransaction().add(R.id.container, new list_contact()).addToBackStack(null).commit();
+                }
+//            else {
+//                getContactData.updateContact(contact);
+//                Toast.makeText(getActivity(), "Contact has been updated", Toast.LENGTH_SHORT).show();
+//
+//            }
             }
+            else
+            {
+                Toast.makeText(getActivity(), "Name and Phone field cant be empty", Toast.LENGTH_SHORT).show();
+            }
+
+
         }
         if (v.getId() == (R.id.contact_del))
         {
@@ -138,10 +149,6 @@ public class edit_contact extends Fragment implements View.OnClickListener{
 
         }
 
-        if (v.getId() == R.id.back)
-        {
-            getFragmentManager().beginTransaction().add(R.id.container, new list_contact()).commit();
-        }
 
     }
 

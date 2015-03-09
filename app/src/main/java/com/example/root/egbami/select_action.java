@@ -40,6 +40,8 @@ public class select_action extends ActionBarActivity implements View.OnClickList
 
 
 
+
+
         speed_dial = (ImageButton) findViewById(R.id.speed_dial);
         service = (ImageButton) findViewById(R.id.service);
         record = (ImageButton) findViewById(R.id.record);
@@ -59,17 +61,6 @@ public class select_action extends ActionBarActivity implements View.OnClickList
 
     }
 
-    @Override
-    public void onBackPressed() {
-        super.onBackPressed();
-//        Intent intent = new Intent(Intent.ACTION_MAIN);
-//
-//        intent.addCategory(Intent.CATEGORY_HOME);
-//
-//        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-//        startActivity(intent);
-//        finish();
-    }
 
     @TargetApi(Build.VERSION_CODES.HONEYCOMB)
     @Override
@@ -77,7 +68,7 @@ public class select_action extends ActionBarActivity implements View.OnClickList
 
         if(v.getId() == R.id.speed_dial) {
             getSupportFragmentManager().beginTransaction()
-                    .replace(R.id.container, new list_contact())
+                    .replace(R.id.container, new list_contact()).addToBackStack(null)
                     .commit();
         }
 
@@ -88,17 +79,20 @@ public class select_action extends ActionBarActivity implements View.OnClickList
         }
         if(v.getId() == R.id.record)
         {
-            getSupportFragmentManager().beginTransaction().add(R.id.container, new med_history_frag()).commit();
+            getSupportFragmentManager().beginTransaction().add(R.id.container, new med_history_frag()).addToBackStack(null)
+                    .commit();
         }
         if(v.getId() == R.id.sos)
         {
-            getSupportFragmentManager().beginTransaction().add(R.id.container, new sos()).commit();
+            Intent intent = new Intent(this, sos.class);
+            startActivity(intent);
 
         }
 
         if(v.getId() == R.id.about)
         {
-            getSupportFragmentManager().beginTransaction().replace(R.id.container, new sos()).commit();
+            getSupportFragmentManager().beginTransaction().replace(R.id.container, new about()).addToBackStack(null)
+                    .commit();
         }
 
     }
@@ -120,7 +114,7 @@ public class select_action extends ActionBarActivity implements View.OnClickList
         //noinspection SimplifiableIfStatement
         if (id == R.id.emer_cont) {
              getSupportFragmentManager().beginTransaction()
-                    .replace(R.id.container, new list_contact())
+                    .replace(R.id.container, new list_contact()).addToBackStack(null)
                     .commit();
         }
 
@@ -129,10 +123,12 @@ public class select_action extends ActionBarActivity implements View.OnClickList
             startActivity(intent);
         }
         if (id == R.id.med_history) {
-            getSupportFragmentManager().beginTransaction().add(R.id.container, new med_history_frag()).commit();
+            getSupportFragmentManager().beginTransaction().add(R.id.container, new med_history_frag()).addToBackStack(null)
+                    .commit();
         }
         if (id == R.id.sos) {
-            getSupportFragmentManager().beginTransaction().add(R.id.container, new sos()).commit();
+            Intent intent = new Intent(this, sos.class);
+            startActivity(intent);
         }
         return super.onOptionsItemSelected(item);
     }

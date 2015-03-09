@@ -48,6 +48,7 @@
     <!-- From: file:/root/AndroidStudioProjects/Egbami/app/src/main/res/values/color.xml -->
     <eat-comment/>
     <color name="dred">#FFCD0511</color>
+    <color name="green">#FF69CF2A</color>
     <!-- From: file:/root/AndroidStudioProjects/Egbami/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values/values.xml -->
     <eat-comment/>
     <color name="highlighted_text_material_dark">#6680cbc4</color>
@@ -204,7 +205,7 @@
     <string name="adamawa_p">08036245920 </string>
     <string name="anambra_n">Anambra</string>
     <string name="anambra_p">08037806180 </string>
-    <string name="app_name">SOS</string>
+    <string name="app_name">Egbami</string>
     <string name="awka_n">Akwa Ibom</string>
     <string name="awka_p">08036074860 </string>
     <string name="bauchi_n">Bauchi</string>
@@ -226,6 +227,7 @@
     <string name="edo_p">08137845777</string>
     <string name="ekiti_n">Ekiti</string>
     <string name="ekiti_p">08125275109 </string>
+    <string name="emailEmergency">Emergency </string>
     <string name="emergency">Emergency service provides \n easy access to PRO of the units</string>
     <string name="enugu_n">Enugu</string>
     <string name="enugu_p">08038829086 </string>
