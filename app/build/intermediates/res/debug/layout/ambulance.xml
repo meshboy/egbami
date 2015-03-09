@@ -52,6 +52,13 @@
                 android:textSize="20sp"
                 android:id="@+id/emergency"
             />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:src="@drawable/calllogo"
+                android:id="@+id/ogun1_" />
         </LinearLayout>
 
     </LinearLayout>

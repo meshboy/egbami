@@ -33,7 +33,7 @@
                 android:background="@android:color/transparent"
                 android:layout_gravity="center_horizontal"
 
-                android:src="@drawable/speed" />
+                android:src="@drawable/speeddial" />
 
             <ImageButton
                 android:layout_width="wrap_content"

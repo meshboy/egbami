@@ -59,6 +59,12 @@
                         android:textColor="@color/blue"
                         android:textSize="20sp"
                         android:id="@+id/fireone" />
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-13dp"
+                        android:src="@drawable/calllogo"
+                        android:id="@+id/ogun1_" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -88,6 +94,12 @@
                         android:textColor="@color/blue"
                         android:textSize="20sp"
                         android:id="@+id/firetwo" />
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-13dp"
+                        android:src="@drawable/calllogo"
+                        android:id="@+id/ogun1_" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -118,6 +130,14 @@
                         android:textColor="@color/blue"
                         android:textSize="20sp"
                         android:id="@+id/firethree" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/calllogo"
+                        android:id="@+id/ogun2_" />
+
                 </LinearLayout>
 
                 </LinearLayout>

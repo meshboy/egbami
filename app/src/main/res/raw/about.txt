@@ -1,10 +1,17 @@
+Help
+
+The user can add emergency contacts for response feedback in the speeddial. The user can call any emergency
+response team in the emergency service. The user can also add his/her medical record.
+The user can send the present location to the emergency contacts.
+
+
 About
 
 Egbami is an android application which is basically meant for emergency response regardless of limiting factors in the country.
- Egbami can be used for all types of emergencies because of the features it possess.
- Egbami considers three basic emergencies which are Fire response, Medical emergency response and Crime response.
- Egbami is an android application which is basically meant for emergency response regardless of limiting factors in the country.
- Egbami can be used for all types of emergencies because of the features it possess.
+Egbami can be used for all types of emergencies because of the features it possess.
+Egbami considers three basic emergencies which are Fire response, Medical emergency response and Crime response.
+Egbami is an android application which is basically meant for emergency response regardless of limiting factors in the country.
+Egbami can be used for all types of emergencies because of the features it possess.
 Egbami android code material @ 2015. All Rights Reserved. Design by Gladiator group. Egbami and the associated logo is the design of the Gladiator group.
 
 Version Number: 1.0.0
