@@ -61,10 +61,10 @@ public class sos extends ActionBarActivity {
                 if(address.size() > 0){
                     Address myadd = address.get(0);
                     for(int i = 0; i<myadd.getMaxAddressLineIndex(); i++){
-                        sb.append(myadd.getAddressLine(i)).append("\n");
-                        sb.append(myadd.getLocality()).append("\n");
+                        sb.append(myadd.getAddressLine(i)).append(" ");
+//                        sb.append(myadd.getLocality()).append("\n");
                         //sb.append(myadd.getPostalCode()).append("\n");
-                        sb.append(myadd.getCountryName()).append("\n");
+                        sb.append(myadd.getCountryName()).append("\r");
                     }
                     addstring = sb.toString();
                 }

@@ -99,7 +99,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="-13dp"
                         android:src="@drawable/calllogo"
-                        android:id="@+id/ogun1_" />
+                        android:id="@+id/ogun3_" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -134,9 +134,9 @@
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp"
+                        android:layout_marginTop="5dp"
                         android:src="@drawable/calllogo"
-                        android:id="@+id/ogun2_" />
+                        android:id="@+id/ogun4_" />
 
                 </LinearLayout>
 
